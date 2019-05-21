@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/crowd-common/crowd-common.iml" filepath="$PROJECT_DIR$/crowd-common/crowd-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager.iml" filepath="$PROJECT_DIR$/crowding-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager-api/crowding-manager-api.iml" filepath="$PROJECT_DIR$/crowding-manager-api/crowding-manager-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager-bean/crowding-manager-bean.iml" filepath="$PROJECT_DIR$/crowding-manager-bean/crowding-manager-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager-impl/crowding-manager-impl.iml" filepath="$PROJECT_DIR$/crowding-manager-impl/crowding-manager-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-manager-main/crowding-manager-main.iml" filepath="$PROJECT_DIR$/crowding-manager-main/crowding-manager-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-potal-api/crowding-potal-api.iml" filepath="$PROJECT_DIR$/crowding-potal-api/crowding-potal-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowding-potal-impl/crowding-potal-impl.iml" filepath="$PROJECT_DIR$/crowding-potal-impl/crowding-potal-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
+    </modules>
+  </component>
+</project>

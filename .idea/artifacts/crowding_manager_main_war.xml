@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="crowding-manager-main:war">
+    <output-path>$PROJECT_DIR$/crowding-manager-main/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>crowding-manager-main</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="crowding-manager-main.war">
+      <element id="artifact" artifact-name="crowding-manager-main:war exploded" />
+    </root>
+  </artifact>
+</component>

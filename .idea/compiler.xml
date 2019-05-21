@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="crowd-common" />
+        <module name="crowding-manager-api" />
+        <module name="crowding-manager-bean" />
+        <module name="crowding-manager-impl" />
+        <module name="crowding-manager-main" />
+        <module name="crowding-potal-api" />
+        <module name="crowding-potal-impl" />
+        <module name="web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="crowd-common" target="1.8" />
+      <module name="crowding-manager" target="1.8" />
+      <module name="crowding-manager-api" target="1.8" />
+      <module name="crowding-manager-bean" target="1.8" />
+      <module name="crowding-manager-impl" target="1.8" />
+      <module name="crowding-manager-main" target="1.8" />
+      <module name="crowding-potal-api" target="1.8" />
+      <module name="crowding-potal-impl" target="1.8" />
+      <module name="web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

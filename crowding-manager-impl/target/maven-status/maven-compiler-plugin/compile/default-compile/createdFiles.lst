@@ -1,0 +1,5 @@
+cn\lyy\App.class
+cn\lyy\crowdfunding\manager\controller\DispacherController.class
+cn\lyy\crowdfunding\manager\service\impl\UserServiceImpl.class
+cn\lyy\crowdfunding\manager\controller\TestController.class
+cn\lyy\crowdfunding\manager\service\impl\TestServiceImpl.class
