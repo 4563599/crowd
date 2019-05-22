@@ -8,4 +8,5 @@ import java.util.List;
 public interface PermissionService {
     List<Permission> queryAllPermission();
 
+    int savePermission(Permission permission);
 }

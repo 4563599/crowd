@@ -18,4 +18,9 @@ public class PermissionImpl implements PermissionService {
     public List<Permission> queryAllPermission() {
         return permissionMapper.queryAllPermission();
     }
+
+    @Override
+    public int savePermission(Permission permission) {
+        return permissionMapper.insert(permission);
+    }
 }
