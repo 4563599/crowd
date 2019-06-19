@@ -71,7 +71,7 @@
                                         class="glyphicon glyphicon-user"></i> 用户维护</a>
                             </li>
                             <li style="height:30px;">
-                                <a href="${APP_PATH }/role.html"><i class="glyphicon glyphicon-king"></i> 角色维护</a>
+                                <a href="${APP_PATH }/role/index.htm"><i class="glyphicon glyphicon-king"></i> 角色维护</a>
                             </li>
                             <li style="height:30px;">
                                 <a href="${APP_PATH }/permission/index.htm"><i class="glyphicon glyphicon-lock"></i> 许可维护</a>

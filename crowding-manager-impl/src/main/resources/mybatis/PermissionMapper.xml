@@ -9,35 +9,42 @@
         <result column="url" property="url" jdbcType="VARCHAR"/>
     </resultMap>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from t_permission
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
+        delete
+        from t_permission
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
     <insert id="insert" parameterType="cn.lyy.crowdfunding.bean.Permission">
-    insert into t_permission (id, pid, name, 
-      icon, url)
-    values (#{id,jdbcType=INTEGER}, #{pid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, 
-      #{icon,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR})
-  </insert>
+        insert into t_permission (id, pid, name,
+                                  icon, url)
+        values (#{id,jdbcType=INTEGER}, #{pid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR},
+                #{icon,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR})
+    </insert>
     <update id="updateByPrimaryKey" parameterType="cn.lyy.crowdfunding.bean.Permission">
-    update t_permission
-    set pid = #{pid,jdbcType=INTEGER},
-      name = #{name,jdbcType=VARCHAR},
-      icon = #{icon,jdbcType=VARCHAR},
-      url = #{url,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+        update t_permission
+        set pid  = #{pid,jdbcType=INTEGER},
+            name = #{name,jdbcType=VARCHAR},
+            icon = #{icon,jdbcType=VARCHAR},
+            url  = #{url,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
-    select id, pid, name, icon, url
-    from t_permission
-    where id = #{id,jdbcType=INTEGER}
-  </select>
+        select id, pid, name, icon, url
+        from t_permission
+        where id = #{id,jdbcType=INTEGER}
+    </select>
     <select id="selectAll" resultMap="BaseResultMap">
-    select id, pid, name, icon, url
-    from t_permission
-  </select>
+        select id, pid, name, icon, url
+        from t_permission
+    </select>
 
     <select id="queryAllPermission" resultMap="BaseResultMap">
-    select id,pid ,name ,icon ,url
-    from t_permission
-  </select>
+        select id,pid,name,icon,url
+        from t_permission
+    </select>
+
+    <select id="queryPermissionidsByRoleid" parameterType="int" resultType="int">
+        select permissionid
+        from t_role_permission
+        where roleid = #{roleid}
+    </select>
 </mapper>

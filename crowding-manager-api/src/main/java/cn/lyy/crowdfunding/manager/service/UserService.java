@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager.service;
 
+import cn.lyy.crowdfunding.bean.Permission;
 import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.utils.Page;
@@ -36,4 +37,6 @@ public interface UserService {
     int saveUserRoleRelationShip(Integer userid, Data data);
 
     int deleteUserRoleRelationship(Integer userid, Data data);
+
+    List<Permission> queryPermissionByUserId(Integer id);
 }

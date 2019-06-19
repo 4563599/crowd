@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager.controller;
 
+import cn.lyy.crowdfunding.bean.Permission;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.service.UserService;
 import cn.lyy.utils.AjaxResult;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -31,7 +33,13 @@ public class DispacherController {
     }
 
     @RequestMapping("/main")
-    public String main() {
+    public String main(HttpSession session) {
+
+        User user = (User) session.getAttribute(Const.LOGIN_USER);
+        List<Permission> myPermission = userService.queryPermissionByUserId(user.getId());
+
+        Permission permissionRoot = null;
+        session.setAttribute("permissionRoot", permissionRoot);
         return "main";
     }
 

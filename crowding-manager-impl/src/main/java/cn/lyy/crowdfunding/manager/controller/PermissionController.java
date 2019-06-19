@@ -79,6 +79,14 @@ public class PermissionController {
         return "permission/add";
     }
 
+    @RequestMapping("/toUpdate")
+    public String toUpdate(Integer id, Map map) {
+        Permission permission = permissionService.getPermissionById(id);
+        map.put("permission", permission);
+        return "permission/update";
+    }
+
+
     @RequestMapping("doAdd")
     @ResponseBody
     public AjaxResult doAdd(Permission permission) {
@@ -91,6 +99,25 @@ public class PermissionController {
             result.setSuccess(false);
             result.setMessage("保存许可树数据失败!");
         }
+        return result;
+    }
+
+
+    @ResponseBody
+    @RequestMapping("/deletePermission")
+    public Object deletePermission(Integer id) {
+        AjaxResult result = new AjaxResult();
+
+        try {
+
+            int count = permissionService.deletePermission(id);
+
+            result.setSuccess(count == 1);
+        } catch (Exception e) {
+            result.setSuccess(false);
+            result.setMessage("删除许可树数据失败!");
+        }
+
         return result;
     }
 

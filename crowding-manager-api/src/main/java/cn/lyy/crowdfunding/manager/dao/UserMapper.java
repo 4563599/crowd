@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager.dao;
 
+import cn.lyy.crowdfunding.bean.Permission;
 import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.vo.Data;
@@ -40,4 +41,6 @@ public interface UserMapper {
     int saveUserRoleRelationShip(@Param("userid") Integer userid, @Param("data") Data data);
 
     int deleteUserRoleRelationship(@Param("userid") Integer userid,@Param("data")  Data data);
+
+    List<Permission> queryPermissionByUserid(Integer id);
 }
