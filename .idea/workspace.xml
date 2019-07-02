@@ -7,24 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b308676f-ef6b-4f2c-a7cf-a522044e1353" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/interceptor/LoginInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowd-common/target/classes/cn/lyy/utils/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowd-common/target/classes/cn/lyy/utils/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/dao/RoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/dao/RoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-api/target/classes/cn/lyy/crowdfunding/manager/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-impl/src/main/java/cn/lyy/crowdfunding/manager/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-impl/target/classes/cn/lyy/crowdfunding/manager/controller/DispacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-impl/target/classes/cn/lyy/crowdfunding/manager/controller/DispacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-impl/target/classes/cn/lyy/crowdfunding/manager/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-impl/target/classes/cn/lyy/crowdfunding/manager/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-impl/target/classes/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-impl/target/classes/mybatis/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/src/main/resources/spring/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/src/main/resources/spring/spring-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/jsp/common/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/jsp/common/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowd-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowd-common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/lib/crowding-manager-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/classes/spring/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/classes/spring/spring-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/classes/spring/spring-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/classes/spring/spring-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crowding-manager-main/target/crowding-manager-main/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/crowding-manager-api/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/interceptor/LoginInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="36" column="75" lean-forward="true" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -363,7 +349,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562035408569" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562035452172" />
     <property name="last_opened_file_path" value="E:/study/idea/corwd/30/20170930-Atcrowdfunding/代码" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -484,7 +470,7 @@
       <workItem from="1561510673065" duration="579000" />
       <workItem from="1561522283872" duration="1233000" />
       <workItem from="1561702352367" duration="598000" />
-      <workItem from="1562030184269" duration="2702000" />
+      <workItem from="1562030184269" duration="3464000" />
     </task>
     <task id="LOCAL-00001" summary="03-许可树-添加许可 (2019-5-21 19-56-56)">
       <created>1558529888257</created>
@@ -507,17 +493,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560914680450</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.登录权限拦截器 (2019-6-18 14-29-19)">
+      <created>1562035442141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562035442141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36672000" />
+    <option name="totallyTimeSpent" value="37434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="256" y="111" width="1511" height="908" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24603721" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24603721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -528,7 +521,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32933334" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32933334" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -563,7 +556,8 @@
     </ignored-roots>
     <MESSAGE value="03-许可树-添加许可 (2019-5-21 19-56-56)" />
     <MESSAGE value="权限完成 没完成(2019-5-21 19-56-56)" />
-    <option name="LAST_COMMIT_MESSAGE" value="权限完成 没完成(2019-5-21 19-56-56)" />
+    <MESSAGE value="1.登录权限拦截器 (2019-6-18 14-29-19)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.登录权限拦截器 (2019-6-18 14-29-19)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,10 +866,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crowding-manager-main/src/main/java/cn/lyy/crowdfunding/interceptor/LoginInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="220">
+          <caret line="36" column="75" lean-forward="true" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
