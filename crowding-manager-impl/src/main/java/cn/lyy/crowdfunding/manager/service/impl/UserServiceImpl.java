@@ -1,5 +1,6 @@
 package cn.lyy.crowdfunding.manager.service.impl;
 
+import cn.lyy.crowdfunding.bean.Permission;
 import cn.lyy.crowdfunding.bean.Role;
 import cn.lyy.crowdfunding.bean.User;
 import cn.lyy.crowdfunding.manager.dao.UserMapper;
@@ -123,5 +124,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public int deleteUserRoleRelationship(Integer userid, Data data) {
         return userMapper.deleteUserRoleRelationship(userid,data);
+    }
+
+    @Override
+    public List<Permission> queryPermissionByUserId(Integer id) {
+        return null;
     }
 }

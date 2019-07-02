@@ -10,49 +10,62 @@
         <result column="createtime" property="createtime" jdbcType="CHAR"/>
     </resultMap>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-		delete from t_user
-		where id = #{id,jdbcType=INTEGER}
-	</delete>
+        delete
+        from t_user
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
     <insert id="insert" parameterType="cn.lyy.crowdfunding.bean.User" useGeneratedKeys="true" keyProperty="id">
-		insert into t_user (id,
-		loginacct, userpswd,
-		username, email, createtime
-		)
-		values
-		(#{id,jdbcType=INTEGER}, #{loginacct,jdbcType=VARCHAR},
-		#{userpswd,jdbcType=CHAR},
-		#{username,jdbcType=VARCHAR},
-		#{email,jdbcType=VARCHAR}, #{createtime,jdbcType=CHAR}
-		)
-	</insert>
+        insert into t_user (id,
+                            loginacct, userpswd,
+                            username, email, createtime)
+        values
+        (#{id,jdbcType=INTEGER}, #{loginacct,jdbcType=VARCHAR},
+         #{userpswd,jdbcType=CHAR},
+         #{username,jdbcType=VARCHAR},
+         #{email,jdbcType=VARCHAR}, #{createtime,jdbcType=CHAR})
+    </insert>
     <update id="updateByPrimaryKey" parameterType="cn.lyy.crowdfunding.bean.User">
-		update t_user
-		set
-		loginacct = #{loginacct,jdbcType=VARCHAR},
-		username = #{username,jdbcType=VARCHAR},
-		email = #{email,jdbcType=VARCHAR},
-		createtime =
-		#{createtime,jdbcType=CHAR}
-		where id = #{id,jdbcType=INTEGER}
-	</update>
+        update t_user
+        set
+            loginacct  = #{loginacct,jdbcType=VARCHAR},
+            username   = #{username,jdbcType=VARCHAR},
+            email      = #{email,jdbcType=VARCHAR},
+            createtime =
+                #{createtime,jdbcType=CHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap"
             parameterType="java.lang.Integer">
-		select id, loginacct, userpswd, username, email,
-		createtime
-		from t_user
-		where id = #{id,jdbcType=INTEGER}
-	</select>
+        select id,
+               loginacct,
+               userpswd,
+               username,
+               email,
+               createtime
+        from t_user
+        where id = #{id,jdbcType=INTEGER}
+    </select>
     <select id="selectAll" resultMap="BaseResultMap">
-		select id, loginacct, userpswd,
-		username, email, createtime
-		from t_user
-	</select>
+        select id,
+               loginacct,
+               userpswd,
+               username,
+               email,
+               createtime
+        from t_user
+    </select>
 
     <select id="queryUserlogin" parameterType="map" resultMap="BaseResultMap">
-		select id, loginacct, userpswd,
-		username, email, createtime
-		from t_user where loginacct=#{loginacct} and userpswd=#{userpswd}
-	</select>
+        select id,
+               loginacct,
+               userpswd,
+               username,
+               email,
+               createtime
+        from t_user
+        where loginacct = #{loginacct}
+          and userpswd = #{userpswd}
+    </select>
 
     <!--<select id="queryList" resultMap="BaseResultMap">-->
     <!--select id, loginacct, userpswd,-->
@@ -90,11 +103,14 @@
     </delete>
 
     <select id="queryAllRoles" resultType="Role">
-        select id,name from t_role ;
+        select id,name
+        from t_role;
     </select>
 
     <select id="queryRoleById" parameterType="int" resultType="int">
-        select roleid from t_user_role where userid= #{id}
+        select roleid
+        from t_user_role
+        where userid = #{id}
     </select>
 
 
@@ -110,4 +126,20 @@
             #{roleid}
         </foreach>
     </delete>
+
+    <select id="queryPermissionByUserid" parameterType="int" resultType="Permission">
+        select distinct t_permission.id, t_permission.pid, t_permission.name,t_permission.icon,t_permission.url
+        from t_permission,
+             t_role_permission,
+             t_role,
+             t_user_role,
+             t_user
+        where
+            t_permission.id = t_role_permission.`permissionid`
+          and t_role_permission.`roleid` = t_role.id
+          and t_role.`id` = t_user_role.`roleid`
+          and t_user_role.`userid` = t_user.`id`
+          and t_user.id = #{userid}
+        order by t_permission.id
+    </select>
 </mapper>

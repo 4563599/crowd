@@ -130,13 +130,13 @@ h3.break>a {
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active" onclick="window.location.href='project.html'" style="cursor:pointer;">
-          <img src="img/carousel-1.jpg" alt="First slide">
+          <img src="img/carousel-11.jpg" alt="First slide">
         </div>
         <div class="item" onclick="window.location.href='project.html'" style="cursor:pointer;">
-          <img src="img/carousel-2.jpg" alt="Second slide">
+          <img src="img/carousel-21.jpg" alt="Second slide">
         </div>
         <div class="item" onclick="window.location.href='project.html'" style="cursor:pointer;">
-          <img src="img/carousel-3.jpg" alt="Third slide">
+          <img src="img/carousel-31.jpg" alt="Third slide">
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
