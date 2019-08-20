@@ -6,15 +6,14 @@ import cn.lyy.crowdfunding.manager.service.UserService;
 import cn.lyy.utils.AjaxResult;
 import cn.lyy.utils.Const;
 import cn.lyy.utils.MD5Util;
+import org.activiti.engine.impl.interceptor.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class DispacherController {
@@ -36,7 +35,18 @@ public class DispacherController {
     public String main(HttpSession session) {
 
         User user = (User) session.getAttribute(Const.LOGIN_USER);
-        List<Permission> myPermission = userService.queryPermissionByUserId(user.getId());
+        List<Permission> permissionList = userService.queryPermissionByUserId(user.getId());
+
+        Map<Integer, Permission> permissionMap = new HashMap<>();
+
+        //用于拦截许可权限
+        Set<String> myUrls = new HashSet<>();
+
+        for (Permission p : permissionList) {
+            permissionMap.put(p.getId(), p);
+            myUrls.add(p.getUrl());
+        }
+        session.setAttribute(Const.MY_URLS, myUrls);
 
         Permission permissionRoot = null;
         session.setAttribute("permissionRoot", permissionRoot);

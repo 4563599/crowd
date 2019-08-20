@@ -51,6 +51,8 @@
 
     <mvc:interceptors>
         <bean id="loginInterceptor" class="cn.lyy.crowdfunding.interceptor.LoginInterceptor"></bean>
+        <bean id="authInterceptor" class="cn.lyy.crowdfunding.interceptor.AuthInterceptor"></bean>
+
     </mvc:interceptors>
 
     <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
